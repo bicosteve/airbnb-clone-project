@@ -75,7 +75,17 @@ These are the entities that will be used in this project schema.
 ## Feature Breakdown
 
 - The main features in this project will be user management, property management, booking management, and payment management.
-- 1.  User Management : This will be used to register user, authenticate users, and give users permissions depending on their roles. Each user will have special roles assigned to him/her depending on whether he/she is a client or admin.
-- 2. Property Manage : This feature will be used to manage/administrate the way properties are created, updated and deleted.
-- 3. Booking Management : This feature will be used to control how bookings are managed.
-- 4. Payment Management : This feature will be used to take payments from clients and also to reward property owners and owners of the app their share of payments.
+
+1.  User Management : This will be used to register user, authenticate users, and give users permissions depending on their roles. Each user will have special roles assigned to him/her depending on whether he/she is a client or admin.
+2.  Property Manage : This feature will be used to manage/administrate the way properties are created, updated and deleted.
+3.  Booking Management : This feature will be used to control how bookings are managed.
+4.  Payment Management : This feature will be used to take payments from clients and also to reward property owners and owners of the app their share of payments.
+
+## API Security
+
+The security measures to be implemented in this project will be;
+
+1. Authentication : Only registers users will be allowed to make bookings
+2. Authorization : Only logged in users will be allowed to make bookings, and create payments. Only admins will be allowed to create properties and view payments for specific property.
+3. Rate Limiting : There will be rate limiting for features like password reset, booking requests, and booking cancellations.
+   Authorization is import to allow only verified users with certain permissions to carry out certain activities. It will also allow for paper trail of who did what at what time. User data and payments will also be protected with property owners only able to view information regarding the users and payments for their property bookings and payments only.
