@@ -43,6 +43,7 @@ The technology stack to be used on this project are;
 ## Database Design
 
 These are the entities that will be used in this project schema.
+
 **1. Users**
 
 - This entity will contain user data in terms of usernames, passwords, and status
@@ -83,9 +84,14 @@ These are the entities that will be used in this project schema.
 
 ## API Security
 
-The security measures to be implemented in this project will be;
+- The security measures to be implemented in this project will be;
 
 1. Authentication : Only registers users will be allowed to make bookings
 2. Authorization : Only logged in users will be allowed to make bookings, and create payments. Only admins will be allowed to create properties and view payments for specific property.
 3. Rate Limiting : There will be rate limiting for features like password reset, booking requests, and booking cancellations.
    Authorization is import to allow only verified users with certain permissions to carry out certain activities. It will also allow for paper trail of who did what at what time. User data and payments will also be protected with property owners only able to view information regarding the users and payments for their property bookings and payments only.
+
+## CI/CD Pipeline
+
+- Pipelines are automated series of steps that assists software development teams to build, test, and deploy code more efficiently. It streamlines the process of software delivery making it faster and safer to make releases.
+- Tools used to make this process possible are GitHub Actions/Jenkins, Docker, Kubernetes etc.
