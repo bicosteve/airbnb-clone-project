@@ -3,6 +3,7 @@
 ## Team Roles
 
 1. Bico Oloo - Backend Developer/Quality Assurance.
+
    **Backend Developer**
 
    - Designs high level architect of the software
@@ -70,3 +71,11 @@ These are the entities that will be used in this project schema.
 - This entity will contain information pertaining to property payments.
 - The main fields in this entity will be payment_id, user_id, property_id, status
 - It will have a one-to-many relationship with Properties and Users.
+
+## Feature Breakdown
+
+- The main features in this project will be user management, property management, booking management, and payment management.
+- 1.  User Management : This will be used to register user, authenticate users, and give users permissions depending on their roles. Each user will have special roles assigned to him/her depending on whether he/she is a client or admin.
+- 2. Property Manage : This feature will be used to manage/administrate the way properties are created, updated and deleted.
+- 3. Booking Management : This feature will be used to control how bookings are managed.
+- 4. Payment Management : This feature will be used to take payments from clients and also to reward property owners and owners of the app their share of payments.
